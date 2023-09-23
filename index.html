@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tailwind CSS project</title>
+</head>
+<body>
+    <a href="page1.html">page1</a>
+    <navbar class="flex  justify-between bg-slate-700 items-center border-rose-50">
+        <div class="logo m-2 order-2 sm:order-1">
+            <h1 class="text-3xl text-white"><a href="index.html"><i class="fa-brands fa-stumbleupon"></i></a></h1>
+        </div>
+        <div class="order-1 sm:order-2 items ">
+            <ul class="hidden font-bold text-white md:flex">
+                <li class="py-2 px-2 m-2 hover:cursor-pointer text-2xl">Home</li>
+                <li class="py-2 px-2 m-2 text-2xl ">Menue</li>
+                <li class="py-2 px-2 m-2 text-2xl ">Contact Us</li>
+            </ul>
+        </div>
+        <div class=" flex sm:hidden text-white mx-2 bars"><i class="fa-solid fa-bars"></i></div>
+        <div class="items order-3 flex"> 
+            <button id="login" class=" rounded-md bg-lime-400 text-white text-sm sm:text-xl font-extrabold hover:bg-lime-700 py-2 px-2 sm:px-4  m-2 mr-0 ">Login</button>
+            <button id="signup" class="btn rounded-md bg-blue-400 text-white font-bold text-sm sm:text-xl hover:bg-blue-700 py-2 px-2 sm:px-4 m-2 ">SignUP</button>
+        </div>
+        <div class="order-3 cursor-pointer mr-3 hidden  text-white text-lg sm:text-2xl" id="admin">admin <i class="fa-solid fa-user"></i></div>
+        <div id="logout" class="absolute top-14 sm:top-16 hidden justify-center items-center right-3 sm:right-2  bg-slate-500 w-24 h-14 sm:w-36 m-auto rounded-lg p-1 my-1">
+            <button id="logoutBtn" class="btn p-1 h-12 sm:h-12 w-20 sm:p-2 m-auto rounded-md  text-sm sm:text-xl   text-white">Logout <i class="fa-solid fa-right-from-bracket"></i></button></div>
+    </navbar>
+    <!-- <section class="min-h-full"> -->
+        <div class="flex justify-between m-2 sm:m-4 rounded-lg overflow-hidden" style="background-image: linear-gradient(55deg,#9f7eae,#97ec0e)">
+            <div class="w-1/12 bg-slate-100 opacity-30 cursor-pointer text-4xl sm:text-8xl flex justify-center items-center">&#60;</div>
+
+            <div class="m-auto my-1">
+                <img class=" rounded-md w-11/12 sm:w-96 m-auto shadow-lg" src="images/shop.jpg" alt="shopping image">
+            </div>
+            <div class="w-1/12 bg-slate-100 opacity-30 cursor-pointer text-black text-4xl sm:text-8xl flex justify-center items-center">&#62;</div>
+        </div>
+    <!-- </section> -->
+    <h1 class="text-left text-xl sm:text-2xl m-2 bg-slate-50 font-serif ">Shopping items</h1>
+    <h1 class="text-left text-xl sm:text-2xl underline m-2 ">Shirts <span class="no-underline"> ></span> </h1>
+     <div class="shopping flex flex-wrap m-2 sm:m-4 rounded-sm justify-center bg-slate-100">
+        <div class="item-1 flex-col w-40 sm:w-72 shadow-md font-monote bg-white font-semibold flex justify-center items-center p-2 sm:p-4 sm:m-3 m-1">
+            <img src="images/product-1.jpg" alt="shirt image" class="h-24 sm:h-36">
+            <h1 class="title text-blue-400 sm:text-3xl text-lg text-center">Office Shirt</h1>
+            <p class="desc text-black sm:text-lg text-sm text-center">export quality, premium designs, well stitched</p>
+            <button class="btn px-2 py-1 sm:px-3  bg-lime-400 rounded-md  text-white my-1 sm:my-2 text-lg sm:text-2xl"> Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="item-2 flex-col sm:w-72 w-40 shadow-md flex bg-white font-semibold justify-center items-center p-2 sm:p-4 m-1 sm:m-3">
+            <img src="images/product-2.jpeg" alt="shirt image" class="h-24 sm:h-36">
+            <h1 class="title text-blue-400 text-lg sm:text-3xl text-center">Casual Shirt <span class="text-sm sm:text-xl ">H-S</span></h1>
+            <p class="desc text-black text-sm sm:text-lg text-center">export quality, premium designs, well stitched</p>
+            <button class="btn px-2 py-1 sm:px-3 bg-lime-400 rounded-md  text-white my-1 sm:my-2 text-lg sm:text-2xl"> <a href="checkout.html">Add to Cart</a> <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="item-3 flex-col shadow-md flex justify-center items-center p-2 sm:p-4 m-1 sm:m-3  w-40 sm:w-72 font-semibold bg-white">
+            <img src="images/product-3.jpeg" alt="shirt image" class="h-24 sm:h-36">
+            <h1 class="title text-blue-400 text-lg sm:text-3xl text-center">Polo Shirt</h1>
+            <p class="desc text-black text-center sm:text-xl text-sm">export quality, premium designs, well stitched</p>
+            <button class="btn px-2 py-1 sm:px-3  bg-lime-400 rounded-md  text-white my-1 sm:my-2 text-lg sm:text-2xl"> Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div> 
+        <div class="item-4 flex-col shadow-md flex justify-center items-center w-40 sm:w-72 font-semibold p-2 sm:p-4 bg-white m-2 sm:m-3">
+            <img src="images/product-4.webp" alt="shirt image" class="h-24 sm:h-36">
+            <h1 class="title text-blue-400 text-lg sm:text-3xl text-center">Cheque Shirt</h1>
+            <p class="desc text-black sm:text-lg text-sm text-center">export quality, premium designs, well stitched</p>
+            <button class="btn px-2 py-1 sm:px-3 bg-lime-400 rounded-md  text-white my-1 sm:my-2 text-lg sm:text-2xl"> Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="item-5 flex-col shadow-md flex justify-center items-center p-2 sm:p-4  w-40 sm:w-72 m-1 sm:m-3 font-semibold bg-white">
+            <img src="images/product-6.jpg" alt="shirt image" class="h-24 sm:h-36">
+            <h1 class="title text-blue-400 text-lg sm:text-3xl font-extrabold font-mono text-center">Sports Shirt</h1>
+            <p class="desc text-black sm:text-lg text-sm text-center">export quality, premium designs, well stitched</p>
+            <button class="btn px-2 py-1 sm:px-3  bg-lime-400 rounded-md  text-white my-1 sm:my-2 text-lg sm:text-2xl"> Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>    
+        <div class="item-6 flex-col shadow-md flex justify-center items-center p-2 sm:p-4  w-40 sm:w-72 m-1 sm:m-3 font-semibold bg-white">
+            <img src="images/product-7.webp" alt="shirt image" class="h-24 sm:h-36">
+            <h1 class="title text-blue-400 text-lg sm:text-3xl font-extrabold font-mono text-center">Sports Shirt</h1>
+            <p class="desc text-black sm:text-lg text-sm text-center">export quality, premium designs, well stitched</p>
+            <button class="btn px-2 py-1 sm:px-3  bg-lime-400 rounded-md  text-white my-1 sm:my-2 text-lg sm:text-2xl"> Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>    
+    </div>
+    <div class=" login-form hidden blur-0 absolute top-14 sm:top-16 right-3 sm:right-6  w-48 sm:w-80 m-auto bg-slate-200 rounded-lg p-2 my-1">
+        <input type="text" name="username" id="username" class="w-full border border-gray-800 mt-11 rounded-md block m-auto my-1 p-1 sm:text-lg text-sm" placeholder="Enter user name">
+        <input type="password" name="password" id="password" placeholder="Enter your password" class="w-full p-1 m-auto my-1 text-sm sm:text-lg border border-gray-800 rounded-md">
+        <input type="submit" value="Login" id="loginBtn" class="bg-lime-400 py-1 px-1 m-auto my-1  cursor-pointer text-white rounded-md font-bold sm:py-2 sm:px-2 w-24 inline-block">
+        <div class="text-red-600 m-1 text-sm sm:text-lg hidden" id="message">*invalid password or username</div>
+        <button class="close p-1 m-1 w-12 bg-lime-400 text-white block absolute right-2 top-2 rounded-md" ><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class=" signup-form hidden blur-0 absolute top-14 sm:top-16 right-3 sm:right-6  w-48 sm:w-80 m-auto bg-slate-200 rounded-lg p-2 my-1">
+        <input type="text" name="susername" id="susername" class="w-full border border-gray-800 mt-11 rounded-md block m-auto my-1 p-1 sm:text-lg text-sm" placeholder="Enter user name">
+        <input type="password" name="spassword" id="spassword" placeholder="Enter your password" class="w-full p-1 m-auto my-1 text-sm sm:text-lg border border-gray-800 rounded-md">
+        <input type="password" name="scpassword" id="scpassword" placeholder="Confirm your password" class="w-full p-1 m-auto my-1 text-sm sm:text-lg border border-gray-800 rounded-md">
+        <input type="submit" value="SignUp" class="bg-lime-400 py-1 px-1 m-auto my-1  cursor-pointer text-white rounded-md font-bold sm:py-2 sm:px-2 w-24 inline-block">
+        <button class="close p-1 m-1 w-12 bg-lime-400 text-white block absolute right-2 top-2 rounded-md"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

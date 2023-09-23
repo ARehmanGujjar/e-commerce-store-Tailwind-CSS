@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tailwind CSS project</title>
+</head>
+<body>
+    <navbar class="flex  justify-between bg-slate-700 items-center border-rose-50">
+        <div class="logo m-2 order-2 sm:order-1">
+            <h1 class="text-3xl text-white"><a href="index.html"><i class="fa-brands fa-stumbleupon"></i></a></h1>
+        </div>
+        <div class="order-1 sm:order-2 items ">
+            <ul class="hidden font-bold text-white md:flex">
+                <li class="py-2 px-2 m-2 hover:cursor-pointer text-2xl">Home</li>
+                <li class="py-2 px-2 m-2 text-2xl ">Menue</li>
+                <li class="py-2 px-2 m-2 text-2xl ">Contact Us</li>
+            </ul>
+        </div>
+        <div class=" flex sm:hidden text-white mx-2 bars"><i class="fa-solid fa-bars"></i></div>
+        <div class="items order-3 flex"> 
+            <button id="login" class=" rounded-md bg-lime-400 text-white text-sm sm:text-xl font-extrabold hover:bg-lime-700 py-2 px-2 sm:px-4  m-2 mr-0 ">Login</button>
+            <button id="signup" class="btn rounded-md bg-blue-400 text-white font-bold text-sm sm:text-xl hover:bg-blue-700 py-2 px-2 sm:px-4 m-2 ">SignUP</button>
+        </div>
+        <div class="order-3 cursor-pointer mr-3 hidden  text-white text-lg sm:text-2xl" id="admin">admin <i class="fa-solid fa-user"></i></div>
+        <div id="logout" class="absolute top-14 sm:top-16 hidden justify-center items-center right-3 sm:right-2  bg-slate-500 w-24 h-14 sm:w-36 m-auto rounded-lg p-1 my-1">
+            <button id="logoutBtn" class="btn p-1 h-12 sm:h-12 w-20 sm:p-2 m-auto rounded-md  text-sm sm:text-xl   text-white">Logout <i class="fa-solid fa-right-from-bracket"></i></button></div>
+    </navbar>
+    <div class=" w-full  sm:w-3/4 md:w-3/4 xl:w-2/4 my-5  m-auto border border-yellow-600 rounded-lg p-3 sm:p-2 flex justify-center items-center">
+        <div class="details w-2/4 p-1 border-r sm:p-2">
+            <h1 class="text-center text-sm sm:text-lg md:text-xl lg:text-2xl text-bold">Office Shirt</h1>
+            <p class=" text-center  md:text-sm  text-xs ">full sleave,export quality, best looking, cheque shirt 
+            <span class="text-indigo-500 italic">will suit your personality</span></p>
+            <img src="images/product-3.jpeg" alt="" class="sm:h-52 md:h-60 lg:h-72 h-40 my-2 mx-auto">
+            <h1 class="text-sm md:text-lg  text-left m-2">Size<i class="fa-solid fa-shirt"></i>:<span class="text-italic">XL</span></h1>
+            <h1 class="text-sm md:text-lg text-left m-2">Color<i class="fa-solid fa-droplet"></i>:<span class="text-italic">grey</span></h1>
+            <h1 class="text-sm md:text-lg text-leftm-2 flex justify-center items-center">Quantity:1 <button class="w-12 sm:w-24 bg-yellow-400 ml-1 text-white  text-2xl p-1">+</button><button class="w-12 sm:w-24 bg-yellow-400 text-white text-2xl ml-1 mr-0 p-1">-</button></h1>
+            
+        </div>
+        <div class="inputs full w-2/4">
+            <h1 class="text-center text-xl sm:text-3xl font-bold mb-3">Checkout <i class="fa-solid fa-receipt"></i></h1>
+            <div class=" flex justify-center items-center">
+                <input type="text" name="fname" id="fname" placeholder="first name" class="border ml-1 sm:m-1 sm:w-2/4 w-full p-1 block sm:inline-block border-gray-800 rounded-md text-xs sm:text-sm">
+                <input type="text" name="lname" id="lname" placeholder="last name" class="border ml-1 sm:m-1 sm:w-2/4 w-full p-1 border-gray-800 text-xs sm:text-sm rounded-md ">
+            </div>
+            <input type="email" class=" w-full p-1 m-1 text-xs sm:text-sm border border-gray-800 rounded-md" placeholder="Enter your email">
+            <input type="text" class=" w-full p-1 m-1 text-xs sm:text-sm border border-gray-800 rounded-md" placeholder="Enter your ph. number ">
+            <input type="text" class=" w-full p-1 m-1 text-xs sm:text-sm border border-gray-800 rounded-md" placeholder="your delivery address(House no.,ABC street,XYZ town)">
+            <div class=" flex justify-center items-center">
+                <input type="text" name="fname" id="fname" placeholder="town (Xcel Lane)" class="border m-1 sm:w-2/4 w-full p-1 block sm:inline-block border-gray-800 rounded-md text-xs sm:text-sm ">
+                <input type="text" name="lname" id="lname" placeholder="city (Dallas,Los Angeles)" class="border mx-1 sm:w-2/4 w-full p-1 border-gray-800 text-xs sm:text-sm rounded-md ">
+            </div>
+            
+            <div class="flex justify-center items-center">
+                <input type="text" name="fname" id="fname" placeholder="state (Taxas,Chicago)" class="border m-1 sm:w-2/4 w-full p-1 block sm:inline-block border-gray-800 rounded-md text-xs sm:text-sm ">
+                <input type="text" name="lname" id="lname" placeholder="zip code (XXXXX)" class="border mx-1 sm:w-2/4 w-full p-1 border-gray-800 text-xs sm:text-sm rounded-md ">
+            </div>
+            <input type="text" class=" w-full p-1 m-1 text-xs sm:text-sm border border-gray-800 rounded-md" placeholder="credit card number (XXXX-XXXXX-XXXX)">
+            <div class="w-full">
+                <h1 class="text-left text-sm lg:text-lg ml-2">Choose your payment method:</h1>
+                <div class="mx-2 inline-block">
+                    <input type="radio" name="Paypal" id="paypal">
+                    <label for="paypal" class="text-xl"><i class="fa-brands fa-paypal"></i></label>
+                </div>
+                <div class="mx-2 inline-block">
+                    <input type="radio" name="masterCard" id="masterCard">
+                    <label for="masterCard" class="text-xl"><i class="fa-brands fa-cc-mastercard"></i></label>
+                </div>
+                <div class="mx-2 inline-block">
+                    <input type="radio" name="credit" id="credit">
+                    <label for="credit" class="text-xl"><i class="fa-solid fa-credit-card"></i></label>
+                </div>
+                <div class="mx-2 inline-block">
+                    <input type="radio" name="applePay" id="applePay">
+                    <label for="applePay" class="text-xl"><i class="fa-brands fa-apple-pay"></i></label>
+                </div>
+                <div class="mx-2 inline-block">
+                    <input type="radio" name="amazonPay" id="amazonPay">
+                    <label for="amazonPay" class="text-xl"><i class="fa-brands fa-amazon-pay"></i></label>
+                </div>
+                <div class="mx-2 inline-block">
+                    <input type="radio" name="gPay" id="gpay">
+                    <label for="gpay" class="text-xl"><i class="fa-brands fa-google-pay"></i></label>
+                </div>
+                <div class="mx-2 inline-block">
+                    <input type="radio" name="cash" id="cash">
+                    <label for="cash" class="text-xl"><i class="fa-solid fa-money-bill-1"></i></label>
+                </div>
+            </div>
+            <button id="checkout" class="btn w-full p-1 bg-red-600 rounded-lg my-3 text-white mx-1 text-sm sm:text-lg lg:text-xl">Checkout</button>
+        </div>
+        
+    </div>     
+    <div id="order" class="absolute hidden p-1 w-72 h-auto text-sm text-white bg-lime-400 border border-black rounded-lg top-24 right-5 sm:text-xl">
+    </div>   
+    <div class=" login-form hidden blur-0 absolute top-14 sm:top-16 right-3 sm:right-6  w-48 sm:w-80 m-auto bg-slate-200 rounded-lg p-2 my-1">
+        <input type="text" name="username" id="username" class="w-full border border-gray-800 mt-11 rounded-md block m-auto my-1 p-1 sm:text-lg text-sm" placeholder="Enter user name">
+        <input type="password" name="password" id="password" placeholder="Enter your password" class="w-full p-1 m-auto my-1 text-sm sm:text-lg border border-gray-800 rounded-md">
+        <input type="submit" value="Login" id="loginBtn" class="bg-lime-400 py-1 px-1 m-auto my-1  cursor-pointer text-white rounded-md font-bold sm:py-2 sm:px-2 w-24 inline-block">
+        <div class="text-red-600 m-1 text-sm sm:text-lg hidden" id="message">*invalid password or username</div>
+        <button class="close p-1 m-1 w-12 bg-lime-400 text-white block absolute right-2 top-2 rounded-md" ><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class=" signup-form hidden blur-0 absolute top-14 sm:top-16 right-3 sm:right-6  w-48 sm:w-80 m-auto bg-slate-200 rounded-lg p-2 my-1">
+        <input type="text" name="susername" id="susername" class="w-full border border-gray-800 mt-11 rounded-md block m-auto my-1 p-1 sm:text-lg text-sm" placeholder="Enter user name">
+        <input type="password" name="spassword" id="spassword" placeholder="Enter your password" class="w-full p-1 m-auto my-1 text-sm sm:text-lg border border-gray-800 rounded-md">
+        <input type="password" name="scpassword" id="scpassword" placeholder="Confirm your password" class="w-full p-1 m-auto my-1 text-sm sm:text-lg border border-gray-800 rounded-md">
+        <input type="submit" value="SignUp" class="bg-lime-400 py-1 px-1 m-auto my-1  cursor-pointer text-white rounded-md font-bold sm:py-2 sm:px-2 w-24 inline-block">
+        <button class="close p-1 m-1 w-12 bg-lime-400 text-white block absolute right-2 top-2 rounded-md"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
